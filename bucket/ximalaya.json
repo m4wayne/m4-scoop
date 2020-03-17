@@ -1,0 +1,23 @@
+{
+    "homepage": "https://www.ximalaya.com/",
+    "version": "1.2.14",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://m.ximalaya.com/user_agreement"
+    },
+    "url": "http://s1.xmcdn.com/yx/ximalaya-pc-client/last/download/Ximalaya-1.2.14_1583728020.exe#/dl.7z",
+    "hash": "6b73351a1a3d33be8c294f2eb68e9cf87fdfbd5323233d24be31579266c8b3c2",
+    "installer": {
+        "script": [
+            "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\Uninstall 喜马拉雅.exe\"  -Force -Recurse"
+        ]
+    },
+    "bin": "喜马拉雅.exe",
+    "shortcuts": [
+        [
+            "喜马拉雅.exe",
+            "喜马拉雅"
+        ]
+    ]
+}
